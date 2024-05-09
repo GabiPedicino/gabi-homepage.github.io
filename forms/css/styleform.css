@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+body{
+    font-family: "questrial";
+    background-color: #D3D3D3;
+    color: #4793AF;
+
+}
+
+.container {
+    padding: 1.25rem;
+    background-color: #D3D3D3;
+    margin-top: 7rem;
+    color: #4793AF;
+    border-radius: 0.5rem;
+}
+
+.form-group {
+    margin-bottom: 1.25rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 0.625rem;
+    border: 1px solid #4793AF;
+    border-radius: 0.3rem;
+    box-sizing: border-box;
+    background-color: #fff; 
+    color: #4793AF;
+    outline: none;
+    box-shadow: 0 0 0 0.5px #4793AF;
+}
+
+textarea {
+    height: 6.25rem;
+}
+
+button {
+    padding: 0.625rem 1.25rem;
+    background-color: #4793AF;
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+}
+
+.send{
+    border-radius: 0.3rem;
+    padding: 0.625rem 1.25rem;
+    background-color: #fff;
+    color: #4793AF;
+    border: 0.3px solid #4793AF;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.send svg {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: left 0.3s ease;
+}
+
+
+.send:hover svg {
+    left: -1.25rem;
+    color: #4793AF;
+}
+
+/*MODO OSCURO*/
+#dark-mode-toggle {
+    position: fixed;
+    top: 0.5rem;
+    right: 1rem;
+    background-color: transparent;
+    color: inherit;
+    border: none;
+    padding: 0.625rem 1rem;
+    cursor: pointer;
+    z-index: 1000;
+    color: #4793AF;
+}
+
+.dark-mode #dark-mode-toggle .bi {
+    color: #FFC0CB; 
+}
+    
+.dark-mode {
+    background-color: #000;
+}
+
+.dark-mode .container {
+    background-color: #000;
+    color: #dfa1ba;
+}
+    
+.dark-mode input[type="text"],
+.dark-mode input[type="email"],
+.dark-mode input[type="tel"],
+.dark-mode textarea {
+    background-color: #dfa1ba;   
+    border-color: #A85274;
+}
+    
+.dark-mode button:hover {
+    background-color: #dfa1ba;
+    border-color: #A85274;
+}
+
+.dark-mode .send{
+    background-color: #dfa1ba; 
+    color: #5d5a5a; 
+    border-color: #FFC0CB; 
+}
+
